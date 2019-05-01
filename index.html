@@ -24,7 +24,17 @@
   </head>
   <body>
     <div id="main">
-      <h1>Yep.</h1>
+      <h1 id="answers">Yessir.</h1>
     </div>
+    <script>
+      var answers = [
+        "Yep!",
+        "Sure is!",
+        "You know it!",
+        "Yessir."
+      ]
+      var randomIndex = Math.floor(Math.random() * (answers.length));
+      document.getElementById("answer").innerHTML = answers[randomIndex];
+    </script>
   </body>
 </html>
